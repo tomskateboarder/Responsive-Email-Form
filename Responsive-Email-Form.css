@@ -1,0 +1,62 @@
+/* Contact Form - Image */
+
+.contact-image {
+    border: 1px solid #ababab;
+    border-radius: 8px;
+}
+
+form input[type="radio"] {
+    font-size: 16px;
+}
+
+form input[type="radio"] + label {
+    display: inline;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Groups and Items (Mobile First) */
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+    margin: 10px;
+}
+
+/* Groups and Items (Desktop) */
+
+@media all and  (min-width: 800px) {
+    section {
+        padding: 0 10%;
+    }
+
+    .group {
+        flex-direction: row;
+    }
+}
+
+/* Contact Form Design */
+
+form {
+    padding-right: 6px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 160px;
+}
